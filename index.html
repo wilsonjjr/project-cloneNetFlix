@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=device-width", initial-scale="'1.0'" />
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+
+    <title>CLONE NETFLIX</title>
+
+  </head>
+
+  <body>
+      <header>
+          <div class="container">
+              <a class="abre-menu" href="#"><i class="fas fa-bars fa-2x"></i></a>
+              <h2 id ="logo" class="animate__animated animate__heartBeat">NETFLIX</h2>
+
+              <div class="menu-lateral">
+
+                <div class="menu">
+
+                  <a href="#" class="fecha-menu"><i class="fas fa-bars"></i></a>
+
+                  <ul>
+                    <li><a id="menul1" href="#"><i class="fas fa-search"></i> Buscar</a></li>
+                    <li><a id="menul2" href="#"><i class="fas fa-dragon"></i> Anime</a></li>
+                    <li><a id="menul3" href="#"><i class="fas fa-car"></i> Aventura</a></li>
+                    <li><a id="menul4" href="#"><i class="fas fa-house-damage"></i> Drama</a></li>
+                    <li><a id="menul6" href="#"><i class="fab fa-tripadvisor"></i> Suspense</a></li>
+                    <li><a id="menul5" href="#"><i class="fas fa-user-secret"></i> Policial</a></li>
+                    <li><a id="menul7" href="#"><i class="fas fa-sad-tear"></i> Terror</a></li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="navMain">
+                <nav>
+                  <a href="#">Início</a>
+                  <a href="#">Série</a>
+                  <a href="#">Filmes</a>
+                  <a href="#">Documentários</a>
+                </nav>
+
+              </div>
+
+        </div>
+    </header>
+
+    <main>
+
+      <div id="filmeP" class="filmePrincipal">
+          <div class="container">
+
+              <h3 class="titulo">Mulher Maravilha 1984</h3>
+
+            <p class="decricao">
+              Mulher-Maravilha 1984 acompanha Diana Prince/Mulher-Maravilha (Gal Gadot) em 1984, durante a Guerra Fria, entrando em conflito com dois grande inimigos - o empresário de mídia Maxwell Lord (Pedro Pascal) e a amiga que virou inimiga Barbara Minerva/Cheetah (Kristen Wiig) - enquanto se reúne com seu interesse amoroso Steve Trevor (Chris Pine).
+
+            </p>
+
+          </div>
+
+          <div class="botoes">
+
+                <button class="botao" type="button" name="botaoPlay" onclick="verFilme()"><i class="far fa-play-circle"> Assistir Agora</i></button>
+                <button class="botao" type="button" name="botaoMaisInfo"><i class="fas fa-info-circle"> Mais Informações</i></button>
+          </div>
+
+      </div>
+    </main>
+
+    <div class="nav-carrossel-filmes">
+      <div class="owl-carousel owl-theme">
+          <div class="item"><img src="resources/menu/croods.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/invernalFalcao.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/badTrip.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/cobrakai.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/diarioVampiro.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/ligajustica.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/miraculous.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/riverdale.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/twd.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/wandaVision.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/vikings.jpg" alt=""> </div>
+          <div class="item"><img src="resources/menu/tomjerry.jpg" alt=""> </div> 
+        </div>
+      </div>
+
+      <script src="js/owl/jquery.min.js"></script>
+      <script src="js/owl/owl.carousel.min.js"></script>
+      <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+      <script src="js/setup.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/menu.js"></script>
+
+  </body>
+</html>

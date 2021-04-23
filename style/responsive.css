@@ -1,0 +1,25 @@
+@media screen and (max-width:300px){
+    header .container{
+    display: flex;
+    flex-direction: column;
+
+    }
+
+    .filmePrincipal .botao{
+        margin: 0px;
+        padding: 0px;
+        font-size: 4px
+        width: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    .filmePrincipal .descricao{
+        width: 40%;
+    }
+}

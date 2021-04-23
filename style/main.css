@@ -1,0 +1,237 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/*Elementos base*/
+
+body{
+
+  background-color: #141414;
+  color: white;
+  font-family: "Book Antiqua", "Time New Roman", "Sans";
+
+}
+
+header .container{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:  flex-start;
+
+}
+
+header #logo{
+
+  margin-left: 10px;
+  color: rgb(232, 34, 52);
+  font-family: "URW Gothic", "Sans", sans-serif, "Times New Roman";
+  font-size: 40px;
+
+}
+
+.navMain{
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-grow: 1;
+
+}
+
+.navMain nav a{
+
+  text-align: right;
+  text-decoration: none;
+  color: rgb(169, 176, 165);
+
+}
+
+.navMain nav a:hover{
+
+  color: red;
+
+}
+
+/*Filme principal*/
+
+.filmePrincipal{
+
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)100%), url("../resources/capas/mulhermaravilha2.jpg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+#filmeP1{
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)100%), url("../resources/capas/mulhermaravilha2.jpg");
+  background-size: cover;
+
+}
+
+#filmeP2{
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)100%), url("https://media.giphy.com/media/PNcM9X0VLnnymK2MzK/giphy.gif");
+  background-size: cover;
+
+}
+
+.filmePrincipal .titulo{
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-family: "C059 Regular";
+
+}
+
+.filmePrincipal .descricao{
+
+    margin-top: 10%;
+    margin-bottom: 40px;
+    text-align: justify;
+
+}
+
+.filmePrincipal .botoes .botao{
+
+  background-color: rgba(0,0,0,0.5);*/
+  border: none;
+  color: white;
+  padding: 25px 30px;
+  margin: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .5s ease all;
+
+}
+
+.filmePrincipal .botoes .botao:hover{
+
+  background-color: white;
+  color: black;
+
+}
+
+.filmePrincipal .botao i{
+
+  margin-right: 0px;
+
+}
+
+.filmePrincipal .botao{
+
+  margin-left: 35px;
+  margin-right: 35px;
+
+}
+
+.container{
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.filmePrincipal .container{
+  width: 80%;
+}
+
+
+/*Menu lateral*/
+
+header .abre-menu{]
+
+  color: rgb(232, 34, 52);
+  padding: 0;
+  text-decoration: none;
+}
+
+header i{
+
+  color: rgb(232, 34, 52);
+  padding: 0;
+  text-decoration: none;
+
+}
+
+.menu { /* Estilo do menu */
+
+	background: rgba(0,0,0,.95);
+	padding: 20px 0 0 20px;
+	position: fixed; /* Posicao fixa */
+	top: 0;
+	right: 0; /* Posicao inicial menu */
+	height: 80%;
+	z-index: 2;
+	transition: 0.5s; /* CSS velocidade de transicao */
+	width: 150px;
+	font: 20px "Book Antiqua", "Time New Roman", "Sans";
+	box-sizing: border-box;
+
+}
+
+.menu > ul{ /* css estilo lista */
+
+	list-style:none;
+	padding:0;
+	margin:0;
+    overflow-y: auto; /* Habilita rolagem menu item */
+	height:95%;
+
+}
+
+.menu > ul > li > a { /* links */
+
+    display: block;
+    border-bottom: 1px solid #131313;
+    padding: 6px 4px 6px 4px;
+    color: #989898;
+    transition: 0.3s;
+	  text-decoration: none;
+
+}
+
+.menu a:hover{
+
+  color: red;
+}
+
+.menu > a.fecha-menu { /* Fecha botao */
+
+    padding: 8px 0 4px 23px;
+    /*color: #6B6B6B;*/
+    color: white;
+    display: block;
+    margin: -30px 0 -10px -20px;
+    font-size: 35px;
+    text-decoration: none;
+
+}
+
+.menu-lateral{ /* Menu flutuante */
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
